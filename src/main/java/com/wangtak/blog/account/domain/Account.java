@@ -1,8 +1,12 @@
 package com.wangtak.blog.account.domain;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Account {
 
     @Id
@@ -13,4 +17,8 @@ public class Account {
     private String email;
     private String password;
 
+    public Account(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 }
