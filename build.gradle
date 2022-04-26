@@ -54,5 +54,5 @@ compileQuerydsl {
 }
 
 bootJar {
-	archiveFileName = 'atheart.jar'
+	archiveFileName = 'takblog.jar'
 }
