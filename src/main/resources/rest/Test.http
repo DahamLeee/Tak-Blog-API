@@ -1,0 +1,11 @@
+### /api/hello 호출
+GET http://localhost:18081/api/hello
+
+### /api/anyone 호출
+GET http://localhost:18081/api/anyone
+
+### /api/anyone POST JSON 사용
+POST http://localhost:18081/api/anyone
+Content-Type: application/json
+
+< test.json
